@@ -58,6 +58,10 @@ cef.on('game:data:playerHunger', hunger => {
 	const foodBar = document.getElementById('food')
 	foodBar.style.width = (hunger / 100) * 100 + '%'
 })
+cef.on('game:data:playerWater', water => {
+	const breathBar = document.getElementById('breath')
+	breathBar.style.width = (water / 100) * 100 + '%'
+})
 cef.on(
 	'game:data:playerStats',
 	(
@@ -75,9 +79,6 @@ cef.on(
 	) => {
 		const healthBar = document.getElementById('health')
 		healthBar.style.width = (hp / max_hp) * 100 + '%'
-
-		const breathBar = document.getElementById('breath')
-		breathBar.style.width = (breath / 100) * 100 + '%'
 
 		const armorBar = document.getElementById('armor')
 		armorBar.style.width = (arm / 100) * 100 + '%'
