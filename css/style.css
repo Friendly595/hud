@@ -227,11 +227,16 @@ html {
 	display: flex;
 	align-items: center;
 }
-.user-money img,
-.user-bank img {
-	width: 2.5vh;
+.user-money img {
+	width: 2.8vh;
 	height: 4vh;
 	margin-left: 10px;
+	order: 2;
+}
+.user-bank img {
+	width: 4.8vh;
+	height: 5vh;
+	margin-left: 1px;
 	order: 2;
 }
 .user-bank {
